@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-items {
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-items li {
+    margin-left: 20px;
+}
+
+#nav-items li:first-child {
+    margin-left: 0px;
+}
+
+#logo {
+    width: 60px;
+    height: 100%;
+}
+
+.content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#intro h1 {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+#intro > p:nth-child(2) {
+    float: left;
+    margin-left: 40%;
+    margin-right: 30px;
+}
+
+#intro > p:nth-child(3) {
+    float: right;
+    margin-right: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+#intro > p:nth-child(4) {
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#cont {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#banner-ootb, #banner-supa {
+    width: 250px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.37);
+}
+
+#banner-ootb:hover, #banner-supa:hover {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#ootb, #supa {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#supa {
+    margin-top: 30px;
+    flex-direction: row-reverse;
+}
+
+#banner-ootb {
+    margin-right: 30px;
+}
+
+#banner-supa {
+    margin-left: 30px;
+}
+
+#ootb-info p, #supa-info p {
+    text-align: center;
+    justify-content: center;
+}
+
+#ootb h2, #supa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+

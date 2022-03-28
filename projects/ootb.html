@@ -19,7 +19,7 @@
             <nav>
                 <ul id="nav-items">
                     <li><a href="../index.html"><img src="/imgs/logo.png" id="logo"></a></li>
-                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../projects.html">Projetos</a></li>
                     <li><a href="./ootb.html">Out of the Breach</a></li>
                     <li><a href="./supa.html">Supapl0x<a></li>
                 </ul>
@@ -28,35 +28,33 @@
                 <section class="content">
                     <div id="slideshow">
                         <div class="slideshow-container">
+                            
+                            <div class="mySlides">
+                                <img src="../imgs/ootb-gif.gif">
+                            </div>
+                            
                             <div class="mySlides">
                               <img src="../imgs/attack.png">
-                              <div class="text">Caption Text</div>
                             </div>
 
-                            <div class="mySlides">
-                                <img src="../imgs/move.png">
-                                <div class="text">Caption Text</div>
-                            </div>
-                                                    
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
                         <div id="slideshow-content1">
-                            <p id="desc">THIS IS A DESCRIPTION</p>
-                            <p id="desc">THIS IS A DESCRIPTION</p>
-                            <p id="desc">THIS IS A DESCRIPTION</p>
-                            <p id="desc">THIS IS A DESCRIPTION</p>
-                            <p id="desc">THIS IS A DESCRIPTION</p>
-                            <p id="desc">THIS IS A DESCRIPTION</p>
+                            <h3 id="sl-h">Out Of The Breach</h3>
+                            <ul id="feats">
+                                <li id="feats-item"><p id="desc">Diferentes inimigos</p></li>
+                                <li id="feats-item"><p id="desc">Diferentes terrenos</p></li>
+                                <li id="feats-item"><p id="desc">Interações com o ambiente</p></li>
+                                <li id="feats-item"><p id="desc">Inimigos responsivos</p></li>
+                                <li id="feats-item"><p id="desc">SPRITES</p></li>
+                            </ul>
                         </div>
 
                         <div id="slideshow-content2" style="display: none;">
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
-                            <p id="desc">THIS IS A DESCRIPTION1</p>
+                            <p id="desc">O objetivo quando desenhamos este remake/demake de Into the Breach era manter alguns elementos do jogo original, nomeadamente as sprites originais e o gameplay que envolve estratégia e interação com o mapa/ambiente!</p>
+                            <p id="desc">Como estamos na cadeira de LDTS priotizamos sempre fazer código que fosse fácil de no futuro mudarmos ou adicionarmos coisas!</p>
+                            <p id="desc"><a href="https://github.com/toni-santos/ldts-proj">Repositório no github!</a></p>
                         </div>
                     </div>
                 </section>
@@ -72,9 +70,9 @@
             if (e.target.className == "prev" || e.target.className == "next") {
                 if (slshow_2.style.display == "none") {
                     slshow_1.style.display = "none";
-                    slshow_2.style.display = "block";
+                    slshow_2.style.display = "flex";
                 } else {
-                    slshow_1.style.display = "block";
+                    slshow_1.style.display = "flex";
                     slshow_2.style.display = "none";
                 }
             }
